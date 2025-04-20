@@ -1,8 +1,4 @@
 import streamlit as st
-from pint import UnitRegistry
-
-# Set up the unit registry
-ureg = UnitRegistry()
 
 # Define available categories and units
 unit_categories = {
