@@ -1,4 +1,8 @@
 import streamlit as st
+from pint import UnitRegistry
+
+# Set up the unit registry
+ureg = UnitRegistry()
 
 # Define available categories and units
 unit_categories = {
@@ -8,7 +12,7 @@ unit_categories = {
     "Volume": ["liter", "milliliter", "gallon", "fluid_ounce"]
 }
 
-st.title("🔄 Units Converter")
+st.title("🔄 Google Style Unit Converter")
 
 # Select category
 category = st.selectbox("Select Unit Type", list(unit_categories.keys()))
